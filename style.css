@@ -69,6 +69,14 @@ button:active {
   font-size: 2rem;
 }
 
+.display__text {
+  border: none;
+  background-color: #000000;
+  color: #fff;
+  text-align: right;
+  font-size: 1.5rem;
+}
+
 .btn__clear {
   grid-area: clear;
 }
