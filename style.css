@@ -1,0 +1,138 @@
+/* CSS Reset */
+
+/* Reset box-sizing to border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default list styles */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Remove default margin and padding on body */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Reset font styles */
+body,
+button,
+input,
+select,
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+}
+
+button {
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
+
+button:active {
+  background-color: #e0e0e0;
+}
+
+.calculator {
+  width: 400px;
+  height: 288px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-areas: 'display display display display' 'clear clear del divide' 'seven eight nine multiply' 'four five six subtract' 'one two three add' 'zero zero zero equals';
+}
+
+.display {
+  height: 48px;
+  grid-area: display;
+  color: white;
+  background-color: #000000;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 2rem;
+}
+
+.btn__clear {
+  grid-area: clear;
+}
+
+.btn__del {
+  grid-area: del;
+}
+
+.btn__div {
+  grid-area: divide;
+}
+
+.btn__7 {
+  grid-area: seven;
+}
+
+.btn__8 {
+  grid-area: eight;
+}
+
+.btn__9 {
+  grid-area: nine;
+}
+
+.btn__mult {
+  grid-area: multiply;
+}
+
+.btn__4 {
+  grid-area: four;
+}
+
+.btn__5 {
+  grid-area: five;
+}
+
+.btn__6 {
+  grid-area: six;
+}
+
+.btn__sub {
+  grid-area: subtract;
+}
+
+.btn__1 {
+  grid-area: one;
+}
+
+.btn__2 {
+  grid-area: two;
+}
+
+.btn__3 {
+  grid-area: three;
+}
+
+.btn__add {
+  grid-area: add;
+}
+
+.btn__0 {
+  grid-area: zero;
+}
+
+.btn__equal {
+  grid-area: equals;
+}
